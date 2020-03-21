@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: lightgray;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 15px;
+}
+
+div.ui.menu {
+  background-color: lightseagreen;
+  border-radius: 0px;
+}
+
+div.ui.menu a.item:first-child {
+  font-weight: bold;
+}
+
+h1.ui.header {
+  color: lightseagreen;
+  font-size: 3.5em;
+}
+
+@media only screen and (min-width: 800px) {
+  .card {
+    flex: 0 1 26%;
+    /* margin: 15px; */
+  }
+}
