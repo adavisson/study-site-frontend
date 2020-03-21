@@ -5,11 +5,13 @@ import {
   Route
 } from 'react-router-dom';
 import Home from './components/Home';
+import HomeMenu from './components/HomeMenu';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <HomeMenu />
         <Route exact path="/" component={Home} />
       </div>
     </Router>
